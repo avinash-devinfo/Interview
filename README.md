@@ -1,3 +1,6 @@
+These commands should be run in mysql before starting the project.
+
+
 MYSQL Commands:
 
 drop table if exists company;
