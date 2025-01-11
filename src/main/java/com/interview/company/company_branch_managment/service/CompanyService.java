@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.interview.company.company_branch_managment.entity.Company;
 import com.interview.company.company_branch_managment.repository.CompanyRepository;
 
 @Service
@@ -16,7 +15,7 @@ public class CompanyService {
 		this.companyRepository = companyRepository;
 	}
 	
-	public List<Company> getCompaniesWithTwoOrMoreBranchesInDelhi() {
+	public List<String> getCompaniesWithTwoOrMoreBranchesInDelhi() {
 		return companyRepository.findCompaniesWithTwoOrMoreBranchesInDelhi();
 	}
 }

@@ -19,7 +19,7 @@ public class CompanyController {
 	}
 	
 	@GetMapping("/companies/delhi")
-	public List<Company> getCompaniesWithTwoOrMoreBranchesInDelhi() {
+	public List<String> getCompaniesWithTwoOrMoreBranchesInDelhi() {
 		return companyService.getCompaniesWithTwoOrMoreBranchesInDelhi();
 		
 	}

@@ -19,7 +19,7 @@ public class Company {
 	private String name;
 	
 	@OneToMany(mappedBy = "company",cascade = CascadeType.ALL,fetch=FetchType.LAZY)
-	private List<Address> addresses;
+	private List<Address> address;
 	
 	public Long getCompanyId() {
 		return companyId;
@@ -33,11 +33,11 @@ public class Company {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<Address> getAddresses() {
-		return addresses;
+	public List<Address> getAddress() {
+		return address;
 	}
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
+	public void setAddress(List<Address> addresses) {
+		this.address = addresses;
 	}
 }
 	
